@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Napoli's Pizzaria</title>
+    <link rel="stylesheet" href="./css/cabecalho/header.css">
+    <link rel="stylesheet" href="./css/carrosel/style_carrossel.css">
+    <link rel="stylesheet" href="./css/historia-pizzaria/style_historia_pizzaria.css">
+    <link rel="stylesheet" href="./css/imagens-historiaPizzaria/imagem_nossaHistoria.css">
+    <link rel="stylesheet" href="./css/tipos-pizza/style_tipos-pizza.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!-- < - Cabeçalho - > -->
+    <header>
+        <div class="cabecalho">
+            <img src="./imagens/imagem-logo/logo-pizza.png" class="logo-pizzaria" alt="logo-pizzaria">
+                <nav class="nav-header">
+                    <section class="cabecalho-direita">
+                        <a href="#" class="nav-a">Início</a>
+                        <a href="#" class="nav-a">Reserva</a>
+                        <a href="#" class="nav-a">Menu</a>
+                    </section>
+                        <section class="barra-pesquisa">
+                            <input id="barra-type" onkeyup="procurar_pizza()" type="text" name="procurar" placeholder="Pesquisar">
+                                <ol id="lista_pesquisa">
+                                    <a href="#"><li class="pizzas">Pizzas Salgadas</li></a>
+                                    <a href="#"><li class="pizzas">Pizzas Doces</li></a>
+                                    <a href="#"><li class="pizzas">Pizza vegetariana</li></a>
+                                    <a href="#"><li class="pizzas">Refrigerante</li></a>
+                                    <a href="#"><li class="pizzas">Porções</li></a>
+                                    <a href="#"><li class="pizzas">Sobremesa</li></a>
+                                </ol>
+                        </section>
+    <script src="./JavaScript/cabecalho.js"></script>
+            <section class="cabecalho-esquerda">
+                <a href="#" class="nav-a" id="nav-a-entrar">Entrar</a>
+                <a href="#" class="nav-a">Criar Conta</a>
+            </section>
+                </nav>
+        </div>
+    </header>
+<!-- < - Fim cabeçalho - > -->
+<main>
+    <!-- Inicio carrossel -->
+    <div class="slider">
+        <div class="slides">
+            <!-- Radio buttons -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <!-- Fim Radio buttons -->
+
+            <!-- Slide images -->
+            <div class="slide first">
+                <img src="./imagens/carrossel/pizza01.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./imagens/carrossel/pizza02.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./imagens/carrossel/pizza03.jpg" alt="">
+            </div>
+            <!-- Fim Slide images -->
+
+            <!-- Nav auto -->
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+        </div>
+
+        <div class="manual-nav">
+            <label class="manual-btn" for="radio1"></label>
+            <label class="manual-btn" for="radio2"></label>
+            <label class="manual-btn" for="radio3"></label>
+        </div>
+
+    </div>
+    <!-- Fim carrossel -->
+
+    <!-- Início - tipos de pizza-->
+    <section class="container_tipos-pizza">
+
+        <article class="tipos-pizza">
+            <a class="link_tipos-pizza" href="#"><img class="imagem_tipos-pizza" src="./imagens/tipos-pizza/salgada.jpg" alt=""></a>
+            <a class="link_tipos-pizza" href="#">Salgada</a>
+        </article>
+
+        <article class="tipos-pizza">
+            <a class="link_tipos-pizza" href="#"><img class="imagem_tipos-pizza" src="./imagens/tipos-pizza/doce.jpg" alt=""></a>
+            <a class="link_tipos-pizza" href="#">Doce</a>
+        </article>
+
+        <article class="tipos-pizza">
+            <a class="link_tipos-pizza" href="#"><img class="imagem_tipos-pizza" src="./imagens/tipos-pizza/promocao.jpg" alt=""></a>
+            <a class="link_tipos-pizza" href="#">Promoção</a>
+        </article>
+
+        <article class="tipos-pizza">
+            <a class="link_tipos-pizza" href="#"><img class="imagem_tipos-pizza" src="./imagens/tipos-pizza/vegetariana.jpg" alt=""></a>
+            <a class="link_tipos-pizza" href="#">Vegetariana</a>
+        </article>
+
+        <article class="tipos-pizza">
+            <a class="link_tipos-pizza" href="#"><img class="imagem_tipos-pizza" src="./imagens/tipos-pizza/zero-lactose.jpg" alt=""></a>
+            <a class="link_tipos-pizza" href="#">Zero lactose</a>
+        </article>
+
+        <article class="tipos-pizza">
+            <a class="link_tipos-pizza" href="#"><img class="imagem_tipos-pizza" src="./imagens/tipos-pizza/kids.jpg" alt=""></a>
+            <a class="link_tipos-pizza" href="#">Kids</a>
+        </article>
+
+        <article class="tipos-pizza">
+            <a class="link_tipos-pizza" href="#"><img class="imagem_tipos-pizza" src="./imagens/tipos-pizza/vegana.jpg" alt=""></a>
+            <a class="link_tipos-pizza" href="#">Vegana</a>
+        </article>
+    
+    </section>
+    <!-- Fim - tipos de pizza -->
+
+    <!-- Início - nossa história -->
+    <section class="container_historia-pizzaria">
+        <h2 class="titulo_historia-pizzaria">Nossa história</h2>
+        <p class="texto_historia-pizzaria">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam veritatis aliquam quisquam quaerat eum atque corrupti sint? Facilis architecto repellat ut ad rem, dolore officiis ex commodi? Quis, sed architecto?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet perferendis repudiandae assumenda earum totam excepturi esse? Autem delectus vero fugit numquam corporis alias fugiat dolore quo! Sint sequi impedit tempora Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam illo reiciendis ut blanditiis ullam rem fugiat qui, magnam labore atque nemo laboriosam totam soluta, optio dolores! Tenetur voluptatibus impedit quos? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur aut eum consequuntur labore? Repellendus dolores in eos dolor, odio quidem voluptates vel laboriosam, quasi similique rem officia dicta. Asperiores, distinctio.</p>
+    </section>
+
+<script src="./JavaScript/js-carrossel.js"></script>
+
+            <section class="container_nossaHistoria">
+                    <section class="container_imagens_nossaHistoria">
+                        <img class="imagem-igual" src="./imagens/fotos-nossaHistoria/foto1.jpg" alt="imagem sobre nossa história">
+                        <img class="imagem2" src="./imagens/fotos-nossaHistoria/foto2.jpg" alt="imagem sobre nossa história">
+                        <img class="imagem-igual" src="./imagens/fotos-nossaHistoria/foto3.jpg" alt="imagem sobre nossa história">
+                    </section>
+            </section>
+
+<!-- < - Fim nossa história - > -->
+</body>
+</html>

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Napoli's Pizzaria</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/cabecalho/header.css">
+    <link rel="stylesheet" href="./css/carrosel/style_carrossel.css">
+    <link rel="stylesheet" href="./css/historia-pizzaria/style_historia_pizzaria.css">
+    <link rel="stylesheet" href="./css/imagens-historiaPizzaria/imagem_nossaHistoria.css">
+    <link rel="stylesheet" href="./css/tipos-pizza/style_tipos-pizza.css">
+    <link rel="stylesheet" href="./css/mapa/style-mapa.css">
+    <link rel="stylesheet" href="css/comentarios/style-comentarios.css">
+    <link rel="stylesheet" href="css/diferenciais/style-diferenciais.css">
+    <link rel="stylesheet" href="./css/mais-pedidas/style-maisPedidas.css">
+    <link rel="stylesheet" href="css/rodape/rodape-style.css">
+   
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- < - Cabeçalho - > -->
+    <header>
+        <div class="cabecalho" id="link-inicio">
+            <img src="./imagens/imagem-logo/logo-pizza.png" class="logo-pizzaria" alt="logo-pizzaria">
+                <nav class="nav-header">
+                    <section class="cabecalho-direita">
+                        <a href="index.html" class="nav-a">Início</a>
+                        <a href="#" class="nav-a">Reserva</a>
+                        <a href="./sabores.html" class="nav-a">Sabores</a>
+                    </section>
+                        <section class="barra-pesquisa">
+                            <input id="barra-type" onkeyup="procurar_pizza()" type="text" name="procurar" placeholder="Pesquisar">
+                                <ol id="lista_pesquisa">
+                                    <a href="#"><li class="pizzas">Pizzas Salgadas</li></a>
+                                    <a href="#"><li class="pizzas">Pizzas Doces</li></a>
+                                    <a href="#"><li class="pizzas">Pizza vegetariana</li></a>
+                                    <a href="#"><li class="pizzas">Refrigerante</li></a>
+                                    <a href="#"><li class="pizzas">Porções</li></a>
+                                    <a href="#"><li class="pizzas">Sobremesa</li></a>
+                                </ol>
+                        </section>
+        <script src="./JavaScript/cabecalho.js"></script>
+            <section class="cabecalho-esquerda">
+                <a href="./login.html" class="nav-a" id="nav-a-entrar">Entrar</a>
+                <a href="./login.html" class="nav-a">Criar Conta</a>
+            </section>
+                <a href="#">
+                    <img src="./imagens/carrinho-cabecalho/cesta.png" alt="carrinho" class="cesto_cabecalho">
+                </a>
+                </nav>
+        </div>
+    </header>
+<!-- < - Fim cabeçalho - > -->
+
+    <main>
+<!-- Inicio carrossel -->
+    <div class="slider">
+        <div class="slides">
+            <!-- Radio buttons -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <!-- Fim Radio buttons -->
+
+            <!-- Slide images -->
+            <div class="slide first">
+                <img src="./imagens/carrossel/pizza01.jpg" alt="" class="img-slide">
+            </div>
+            <div class="slide">
+                <img src="./imagens/carrossel/pizza02.jpg" alt="" class="img-slide">
+            </div>
+            <div class="slide">
+                <img src="./imagens/carrossel/pizza03.jpg" alt="" class="img-slide">
+            </div>
+            <!-- Fim Slide images -->
+
+            <!-- Nav auto -->
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+        </div>
+
+        <div class="manual-nav">
+            <label class="manual-btn" for="radio1"></label>
+            <label class="manual-btn" for="radio2"></label>
+            <label class="manual-btn" for="radio3"></label>
+        </div>
+
+    </div>
+<!-- Fim carrossel -->
+
+<!-- Início - tipos de pizza-->
+    <section class="container_tipos-pizza">
+
+        <article class="tipos-pizza">
+            <a class="link_tipos-pizza" href="#"><img class="imagem_tipos-pizza" src="./imagens/tipos-pizza/salgada.jpg" alt=""></a>
+            <a class="link_tipos-pizza" href="#">Salgada</a>
+        </article>
+
+        <article class="tipos-pizza">
+            <a class="link_tipos-pizza" href="#"><img class="imagem_tipos-pizza" src="./imagens/tipos-pizza/doce.png" alt=""></a>
+            <a class="link_tipos-pizza" href="#">Doce</a>
+        </article>
+
+        <article class="tipos-pizza">
+            <a class="link_tipos-pizza" href="#"><img class="imagem_tipos-pizza" src="./imagens/tipos-pizza/vegetariana.jpg" alt=""></a>
+            <a class="link_tipos-pizza" href="#">Vegetariana</a>
+        </article>
+
+        <article class="tipos-pizza">
+            <a class="link_tipos-pizza" href="#"><img class="imagem_tipos-pizza" src="./imagens/tipos-pizza/promocao.png" alt=""></a>
+            <a class="link_tipos-pizza" href="#">Promoção</a>
+        </article>
+
+        <article class="tipos-pizza">
+            <a class="link_tipos-pizza" href="#"><img class="imagem_tipos-pizza" src="./imagens/tipos-pizza/zero-lactose.png" alt=""></a>
+            <a class="link_tipos-pizza" href="#">Zero lactose</a>
+        </article>
+
+        <article class="tipos-pizza">
+            <a class="link_tipos-pizza" href="#"><img class="imagem_tipos-pizza" src="./imagens/tipos-pizza/kids.png" alt=""></a>
+            <a class="link_tipos-pizza" href="#">Kids</a>
+        </article>
+
+        <article class="tipos-pizza">
+            <a class="link_tipos-pizza" href="#"><img class="imagem_tipos-pizza" src="./imagens/tipos-pizza/vegana.png" alt=""></a>
+            <a class="link_tipos-pizza" href="#">Vegana</a>
+        </article>
+    
+    </section>
+<!-- Fim - tipos de pizza -->
+
+<!-- Inicio pizzas mais pedidas -->
+<div class="titulo_maisPedidas">
+    <p class="conteudo_maisPedidas">Mais pedidas</p>
+</div>
+<section class="container_mais-pedidas">
+    <div class="container_informacoes-mais-pedidas">
+        <img src="./imagens/mais-pedidas/calabresa.png" alt="" class="imagem_mais-pedidas">
+        <div class="titulo_sabor">
+            <h3>Calabresa</h3>
+        </div>
+                <p>Massa caseira, molhos de tomates orgânicos, calabresa defumada, cebola e queijo mussarela</p>
+                    <div> 
+                        <ol class="lista_sobre-pizza"> 
+                            <li class="lista_tamanho">Broto</li>
+                            <li class="lista_tamanho">Média</li>
+                            <li class="lista_tamanho">Grande</li>
+                        </ol> 
+                    </div>
+                    <div>
+                        <ol class="lista_sobre-pizza">
+                            <li class="lista_centimetro">25cm</li>
+                            <li class="lista_centimetro">35cm</li>
+                            <li class="lista_centimetro">50cm</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <ol class="lista_sobre-pizza">
+                            <li  class="lista_valor">R$31,90</li>
+                            <li  class="lista_valor">R$56,60</li>
+                            <li  class="lista_valor">R$70,00</li>
+                        </ol>
+                    </div>
+    </div>
+    
+    <div class="container_informacoes-mais-pedidas">
+        <img src="./imagens/mais-pedidas/passatempo.png" alt="" class="imagem_mais-pedidas">
+        <div class="titulo_sabor">
+            <h3>Passatempo</h3>
+        </div>
+                <p>Massa caseira, chocolate ao leite e cobertura de chocolate meio amarga</p>
+                    <div>
+                        <ol class="lista_sobre-pizza">   
+                            <li class="lista_tamanho">Broto</li>
+                            <li class="lista_tamanho">Média</li>
+                            <li class="lista_tamanho">Grande</li>
+                        </ol> 
+                    </div>
+                    <div>
+                        <ol class="lista_sobre-pizza">
+                            <li class="lista_centimetro">25cm</li>
+                            <li class="lista_centimetro">35cm</li>
+                            <li class="lista_centimetro">50cm</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <ol class="lista_sobre-pizza">
+                            <li class="lista_valor">R$31,90</li>
+                            <li class="lista_valor">R$56,60</li>
+                            <li class="lista_valor">R$70,00</li>
+                        </ol>
+                    </div>
+    </div>
+
+    <div class="container_informacoes-mais-pedidas">
+        <img src="./imagens/mais-pedidas/strogonoff.png" alt="" class="imagem_mais-pedidas">
+        <div class="titulo_sabor">
+            <h3>Strogonoff</h3>
+        </div>
+                <p>Massa caseira, strogonoff de carne, batata palha e champingnon</p>
+                    <div>
+                        <ol class="lista_sobre-pizza">   
+                            <li class="lista_tamanho">Broto</li>
+                            <li class="lista_tamanho">Média</li>
+                            <li class="lista_tamanho">Grande</li>
+                        </ol> 
+                    </div>
+                    <div>
+                        <ol class="lista_sobre-pizza">
+                            <li class="lista_centimetro">25cm</li>
+                            <li class="lista_centimetro">35cm</li>
+                            <li class="lista_centimetro">50cm</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <ol class="lista_sobre-pizza">
+                            <li  class="lista_valor">R$31,90</li>
+                            <li  class="lista_valor">R$56,60</li>
+                            <li  class="lista_valor">R$70,00</li>
+                        </ol>
+                    </div>
+    </div>
+
+    <div class="container_informacoes-mais-pedidas">
+        <img src="./imagens/mais-pedidas/portuguesa.png" alt="" class="imagem_mais-pedidas">
+        <div class="titulo_sabor">
+            <h3>Portuguesa</h3>
+        </div>
+                <p>Massa caseira, molhos de tomates orgânicos, cebola roxa, ovo, tomate cereja, azeitona e pimentão</p>
+                    <div>
+                        <ol class="lista_sobre-pizza">    
+                            <li class="lista_tamanho">Broto</li>
+                            <li class="lista_tamanho">Média</li>
+                            <li class="lista_tamanho">Grande</li>
+                        </ol> 
+                    </div>
+                    <div>
+                        <ol class="lista_sobre-pizza">
+                            <li class="lista_centimetro">25cm</li>
+                            <li class="lista_centimetro">35cm</li>
+                            <li class="lista_centimetro">50cm</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <ol class="lista_sobre-pizza">
+                            <li  class="lista_valor">R$31,90</li>
+                            <li  class="lista_valor">R$56,60</li>
+                            <li  class="lista_valor">R$70,00</li>
+                        </ol>
+                    </div>
+    </div>
+
+    <div class="container_informacoes-mais-pedidas">
+        <img src="./imagens/mais-pedidas/rucula.png" alt="" class="imagem_mais-pedidas">
+        <div class="titulo_sabor">
+            <h3>Rúcula com queijo</h3>
+        </div>
+                <p>Massa caseira, carne seca, tomate e mozarella</p>
+                    <div>
+                        <ol class="lista_sobre-pizza">    
+                            <li class="lista_tamanho">Broto</li>
+                            <li class="lista_tamanho">Média</li>
+                            <li class="lista_tamanho">Grande</li>
+                        </ol> 
+                    </div>
+                    <div>
+                        <ol class="lista_sobre-pizza">
+                            <li class="lista_centimetro">25cm</li>
+                            <li class="lista_centimetro">35cm</li>
+                            <li class="lista_centimetro">50cm</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <ol class="lista_sobre-pizza">
+                            <li  class="lista_valor">R$31,90</li>
+                            <li  class="lista_valor">R$56,60</li>
+                            <li  class="lista_valor">R$70,00</li>
+                        </ol>
+                    </div>
+    </div>
+
+    <div class="container_informacoes-mais-pedidas">
+        <img src="./imagens/mais-pedidas/listradinha.png" alt="" class="imagem_mais-pedidas">
+        <div class="titulo_sabor">
+            <h3>Listradinha</h3>
+        </div>
+                <p>Massa caseira, chocolate ao leite, chocolate meio amargo e chocolate branco suiço</p>
+                    <div>
+                        <ol class="lista_sobre-pizza">    
+                            <li class="lista_tamanho">Broto</li>
+                            <li class="lista_tamanho">Média</li>
+                            <li class="lista_tamanho">Grande</li>
+                        </ol> 
+                    </div>
+                    <div>
+                        <ol class="lista_sobre-pizza">
+                            <li class="lista_centimetro">25cm</li>
+                            <li class="lista_centimetro">35cm</li>
+                            <li class="lista_centimetro">50cm</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <ol class="lista_sobre-pizza">
+                            <li  class="lista_valor">R$31,90</li>
+                            <li  class="lista_valor">R$56,60</li>
+                            <li  class="lista_valor">R$70,00</li>
+                        </ol>
+                    </div>
+    </div>
+
+    <div class="container_informacoes-mais-pedidas">
+        <img src="./imagens/mais-pedidas/havaiana.png" alt="" class="imagem_mais-pedidas">
+        <div class="titulo_sabor">
+            <h3>Havaiana</h3>
+        </div>
+                <p>Massa caseira, molhos de tomates orgânicos, calabresa defumada, cebola</p>
+                    <div>
+                        <ol class="lista_sobre-pizza">    
+                            <li class="lista_tamanho">Broto</li>
+                            <li class="lista_tamanho">Média</li>
+                            <li class="lista_tamanho">Grande</li>
+                        </ol> 
+                    </div>
+                    <div>
+                        <ol class="lista_sobre-pizza">
+                            <li class="lista_centimetro">25cm</li>
+                            <li class="lista_centimetro">35cm</li>
+                            <li class="lista_centimetro">50cm</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <ol class="lista_sobre-pizza">
+                            <li  class="lista_valor">R$31,90</li>
+                            <li  class="lista_valor">R$56,60</li>
+                            <li  class="lista_valor">R$70,00</li>
+                        </ol>
+                    </div>
+    </div>
+
+    <div class="container_informacoes-mais-pedidas">
+        <img src="./imagens/mais-pedidas/romeu.png" alt="" class="imagem_mais-pedidas">
+        <div class="titulo_sabor">
+            <h3>Romeu e Julieta</h3>
+        </div>
+                <p>Massa caseira, goiabada e queijo</p>
+                    <div>
+                        <ol class="lista_sobre-pizza">    
+                            <li class="lista_tamanho">Broto</li>
+                            <li class="lista_tamanho">Média</li>
+                            <li class="lista_tamanho">Grande</li>
+                        </ol> 
+                    </div>
+                    <div>
+                        <ol class="lista_sobre-pizza">
+                            <li class="lista_centimetro">25cm</li>
+                            <li class="lista_centimetro">35cm</li>
+                            <li class="lista_centimetro">50cm</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <ol class="lista_sobre-pizza">
+                            <li  class="lista_valor">R$31,90</li>
+                            <li  class="lista_valor">R$56,60</li>
+                            <li  class="lista_valor">R$70,00</li>
+                        </ol>
+                    </div>
+    </div>
+    
+</section>
+<!-- Fim pizzas mais pedidas -->
+
+<!-- Início Comentários -->
+    <div class="titulo_sessao-comentarios" id="link-comentarios">
+        <p class="conteudo_titulo_sessao-comentarios">Comentários</p>
+    </div>
+        <section class="container_sessao-comentarios">
+    
+            <div class="container_comentario_sessao-comentarios">
+    
+                <article class="comentario_sessao-comentarios">
+    
+                    <img class="usuario-img_sessao-comentarios" src="imagens/comentarios/usuario01.jpg" alt="">
+    
+                    <p class="nome-usuario_sessao-comentarios">Gabriel Cardoso</p>
+    
+                    <div class="container_estrelas-sessao-comentarios">
+                        <img class="estrelas_sessao-comentarios" src="imagens/comentarios/estrela-icone.svg" alt="Estrela amarela de 5 pontas">
+                        <img class="estrelas_sessao-comentarios" src="imagens/comentarios/estrela-icone.svg" alt="Estrela amarela de 5 pontas">
+                        <img class="estrelas_sessao-comentarios" src="imagens/comentarios/estrela-icone.svg" alt="Estrela amarela de 5 pontas">
+                        <img class="estrelas_sessao-comentarios" src="imagens/comentarios/estrela-icone.svg" alt="Estrela amarela de 5 pontas">
+                        <img class="estrelas_sessao-comentarios" src="imagens/comentarios/estrela-icone.svg" alt="Estrela amarela de 5 pontas">
+                    </div>
+    
+                    <p class="texto_sessao-comentarios">"Um excelente serviço, melhores preços e atendimentos incrível. Fiquei muito animado por receber uma experiência tão maravilhosa."</p>
+    
+                </article>
+                
+            </div>
+            <div class="container_comentario_sessao-comentarios">
+    
+                <article class="comentario_sessao-comentarios">
+    
+                    <img class="usuario-img_sessao-comentarios" src="imagens/comentarios/usuario01.jpg" alt="">
+    
+                    <p class="nome-usuario_sessao-comentarios">Gabriel Cardoso</p>
+    
+                    <div class="container_estrelas-sessao-comentarios">
+                        <img class="estrelas_sessao-comentarios" src="imagens/comentarios/estrela-icone.svg" alt="Estrela amarela de 5 pontas">
+                        <img class="estrelas_sessao-comentarios" src="imagens/comentarios/estrela-icone.svg" alt="Estrela amarela de 5 pontas">
+                        <img class="estrelas_sessao-comentarios" src="imagens/comentarios/estrela-icone.svg" alt="Estrela amarela de 5 pontas">
+                        <img class="estrelas_sessao-comentarios" src="imagens/comentarios/estrela-icone.svg" alt="Estrela amarela de 5 pontas">
+                        <img class="estrelas_sessao-comentarios" src="imagens/comentarios/estrela-icone.svg" alt="Estrela amarela de 5 pontas">
+                    </div>
+    
+                    <p class="texto_sessao-comentarios">"Um excelente serviço, melhores preços e atendimentos incrível. Fiquei muito animado por receber uma experiência tão maravilhosa."</p>
+    
+                </article>
+                
+            </div>
+            <div class="container_comentario_sessao-comentarios">
+    
+                <article class="comentario_sessao-comentarios">
+    
+                    <img class="usuario-img_sessao-comentarios" src="imagens/comentarios/usuario01.jpg" alt="">
+    
+                    <p class="nome-usuario_sessao-comentarios">Gabriel Cardoso</p>
+    
+                    <div class="container_estrelas-sessao-comentarios">
+                        <img class="estrelas_sessao-comentarios" src="imagens/comentarios/estrela-icone.svg" alt="Estrela amarela de 5 pontas">
+                        <img class="estrelas_sessao-comentarios" src="imagens/comentarios/estrela-icone.svg" alt="Estrela amarela de 5 pontas">
+                        <img class="estrelas_sessao-comentarios" src="imagens/comentarios/estrela-icone.svg" alt="Estrela amarela de 5 pontas">
+                        <img class="estrelas_sessao-comentarios" src="imagens/comentarios/estrela-icone.svg" alt="Estrela amarela de 5 pontas">
+                        <img class="estrelas_sessao-comentarios" src="imagens/comentarios/estrela-icone.svg" alt="Estrela amarela de 5 pontas">
+                    </div>
+    
+                    <p class="texto_sessao-comentarios">"Um excelente serviço, melhores preços e atendimentos incrível. Fiquei muito animado por receber uma experiência tão maravilhosa."</p>
+    
+                </article>
+                
+            </div>
+            <div class="container_comentario_sessao-comentarios">
+    
+                <article class="comentario_sessao-comentarios">
+    
+                    <img class="usuario-img_sessao-comentarios" src="imagens/comentarios/usuario01.jpg" alt="">
+    
+                    <p class="nome-usuario_sessao-comentarios">Gabriel Cardoso</p>
+    
+                    <div class="container_estrelas-sessao-comentarios">
+                        <img class="estrelas_sessao-comentarios" src="imagens/comentarios/estrela-icone.svg" alt="Estrela amarela de 5 pontas">
+                        <img class="estrelas_sessao-comentarios" src="imagens/comentarios/estrela-icone.svg" alt="Estrela amarela de 5 pontas">
+                        <img class="estrelas_sessao-comentarios" src="imagens/comentarios/estrela-icone.svg" alt="Estrela amarela de 5 pontas">
+                        <img class="estrelas_sessao-comentarios" src="imagens/comentarios/estrela-icone.svg" alt="Estrela amarela de 5 pontas">
+                        <img class="estrelas_sessao-comentarios" src="imagens/comentarios/estrela-icone.svg" alt="Estrela amarela de 5 pontas">
+                    </div>
+    
+                    <p class="texto_sessao-comentarios">"Um excelente serviço, melhores preços e atendimentos incrível. Fiquei muito animado por receber uma experiência tão maravilhosa."</p>
+    
+                </article>
+                
+            </div>
+            
+        </section>       
+<!-- Fim - comentários -->
+
+<!-- Inicio - sessão de diferenciais -->
+    <section class="container_diferenciais">
+
+        <section class="container_texto_diferenciais">
+            <p class="titulo_diferenciais">Serviço de alta qualidade</p>
+
+            <section class="container_topicos_diferenciais">
+                <p class="topicos_diferenciais"><img class="icone_difefernciais" src="imagens/diferenciais/icones-check.svg" alt="">Ambiente agradável</p>
+                <p class="topicos_diferenciais"><img class="icone_difefernciais" src="imagens/diferenciais/icones-check.svg" alt="">Chefes renomados</p>
+                <p class="topicos_diferenciais"><img class="icone_difefernciais" src="imagens/diferenciais/icones-check.svg" alt="">Atendimento especializado</p>
+
+            </section>
+            
+        </section>
+
+        <section class="container_imagem_diferenciais" >
+            <img class="foto_diferenciais" src="imagens/diferenciais/img_pizza-diferenciais.jpg" alt="pizza de queijo com azeitona sobre uma tábua de madeira e duas mãos retirando um pedaço.">
+
+        </section>
+
+    </section>
+<!-- Fim - sessão de diferenciais -->
+
+<!-- Início mapa -->
+        <section class="mapa" id="link-mapa">
+            <div class="titulo_mapa" >
+                <p class="conteudo_titulo_mapa">Estamos localizados</p>
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.203784695008!2d-51.17383088471663!3d-30.05969
+            26389468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951977fd79a847e5%3A0xa0f279b1e3f4bf0c!2sTecnopuc!5e0
+            !3m2!1spt-BR!2sbr!4v1674582209043!5m2!1spt-BR!2sbr" width="50%" height="400" allowfullscreen="" 
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="tec_mapa"></iframe>
+        </section>
+<!-- Fim mapa -->
+
+        <script src="JavaScript/js-carrossel.js"></script>
+    </main>
+
+    <footer class="rodape">
+
+        <section class="container01_rodape">
+            <section class="coluna_rodape">
+                <p class="texto_coluna_rodape">4.500</p>
+                <p class="texto_coluna_rodape">Pizzas feitas</p>
+            </section>
+
+            <section class="coluna_rodape">
+                <p class="texto_coluna_rodape">200</p>
+                <p class="texto_coluna_rodape">Seguidores</p>
+            </section>
+
+            <section class="coluna_rodape">
+                <p class="texto_coluna_rodape">02</p>
+                <p class="texto_coluna_rodape">Restaurantes</p>
+            </section>
+
+            <section class="coluna_rodape">
+                <p class="texto_coluna_rodape">1.200</p>
+                <p class="texto_coluna_rodape">Clientes satisfeitos</p>
+            </section>
+        </section>
+
+        <section class="container02_rodape">
+            <section class="coluna_container02_rodape">
+                <p class="subtitulo_container02_rodape">Contato</p>
+
+                <section class="informacao_container02_rodape">
+                    <p class="subtitulo_container02_rodape">Telefone:</p>
+                    <a class="link_container02_rodape" href="">(51)91234-5678</a>
+
+                </section>
+                <section class="informacao_container02_rodape">
+                    <p class="subtitulo_container02_rodape">Whatsapp:</p>
+                    <a class="link_container02_rodape" href="">(51)98765-4321</a>
+
+                </section>
+                <section class="informacao_container02_rodape">
+                    <p class="subtitulo_container02_rodape">Email:</p>
+                    <a class="link_container02_rodape" href="">napoles@pizzaria.com</a>
+
+                </section>
+
+            </section>
+
+            <section class="coluna_container02_rodape coluna01">
+                <a class="link_container02_rodape" href="#link-inicio">Início</a>
+                <a class="link_container02_rodape" href="">Menu</a>
+                <a class="link_container02_rodape" href="">Entrar</a>
+                <a class="link_container02_rodape" href="">Cadastro</a>
+
+            </section>
+
+            <section class="coluna_container02_rodape">
+                <a class="link_container02_rodape" href="#link-mapa">Mapa</a>
+                <a class="link_container02_rodape" href="#link-comentarios">Comentário</a>
+                <a class="link_container02_rodape" href="">Nossa história</a>
+
+            </section>
+
+            <section class="coluna_container02_rodape">
+                <p class="subtitulo_container02_rodape">Reserve sua mesa</p>
+                <a class="link_container02_rodape" href="">Formulário de cadastro</a>
+
+            </section>
+
+        </section>
+
+    </footer>
+
+</body>
+</html>

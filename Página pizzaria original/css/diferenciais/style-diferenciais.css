@@ -1,0 +1,49 @@
+.container_diferenciais{
+    display: flex;
+    justify-content: center;
+
+}
+
+.container_texto_diferenciais{
+    background: #D9D9D9;
+    height: 350px;
+    width: 50%;
+
+}
+
+.titulo_diferenciais{
+    color: #FFFFFF;
+    font-size: 30px;
+    margin: 5px 0 0 50px;
+
+}
+
+.container_topicos_diferenciais{
+    margin: 60px 0 0 0;
+}
+
+.topicos_diferenciais{
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+    margin: 30px 0 0 50px;
+
+}
+
+.icone_difefernciais{
+    width: 45px;
+
+}
+
+.container_imagem_diferenciais{
+    height: 350px;
+    width: 50%;
+
+}
+
+.foto_diferenciais{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+}

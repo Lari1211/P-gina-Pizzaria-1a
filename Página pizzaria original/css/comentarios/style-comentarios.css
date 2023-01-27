@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.titulo_sessao-comentarios{
+    border-bottom: 3px solid #D9D9D9;
+    width: 50%;
+    margin: 45px auto 0;
+
+}
+
+.conteudo_titulo_sessao-comentarios{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.titulo_sessao-comentarios{
+    text-align: center;
+}
+
+.container_sessao-comentarios{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0 100px 0;
+    width: 100%;
+
+}
+
+.container_comentario_sessao-comentarios{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.comentario_sessao-comentarios{
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 15px;
+    box-shadow: -3px 3px 8px -1px grey;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 72%;
+
+}
+
+.usuario-img_sessao-comentarios{
+    border-radius: 100%;
+    width: 100px;
+
+}
+
+.nome-usuario_sessao-comentarios{
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+
+}
+
+.texto_sessao-comentarios{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    width: 75%;
+
+}
+
+.container_estrelas-sessao-comentarios{
+  display: flex;  
+    
+}
+
+.estrelas_sessao-comentarios{
+    justify-content: center;
+    width: 15px;
+
+}

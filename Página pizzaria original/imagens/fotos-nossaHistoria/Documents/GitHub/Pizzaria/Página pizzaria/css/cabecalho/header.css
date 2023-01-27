@@ -1,0 +1,72 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.cabecalho {
+    background: #FF2D2D;
+    display: flex;
+    padding: 2px;
+}
+.logo-pizzaria {
+    padding-left: 20px;
+    width: 50px;
+}
+.nav-header {
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    padding-left: 35px;
+}
+
+.nav-a {
+    color: black;
+    margin: 0 10px 0 20px;
+    text-decoration: none;
+}
+.nav-a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+#nav-a-entrar {
+    background: #CCCCCC;
+    border: solid 1px;
+    border-radius: 5px;
+}
+.cabecalho-esquerda {
+    padding-left: 20px;
+}
+.cabecalho-direita {
+    padding-right: 10px;
+}
+ /* Input */
+
+ #barra-type {
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-size: 16px;
+    margin: 0 0 5px 13px;
+    margin-left: 15px;
+    outline: none;
+    padding: 10px;
+}
+input[type=text] {
+    width: 500px;
+}
+#lista-pesquisa {
+    font-size: 1.5em;
+    margin-left: 90px;
+    text-decoration: none;
+}
+.pizzas {
+    color: orange;
+    display: none;
+    text-decoration: underline;
+}
+.barra-pesquisa {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 40px;
+}

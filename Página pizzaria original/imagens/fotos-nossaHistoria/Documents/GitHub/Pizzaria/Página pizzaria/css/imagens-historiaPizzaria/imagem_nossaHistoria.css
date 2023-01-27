@@ -1,0 +1,17 @@
+.container_nossaHistoria {
+    margin: 5px 0 5px 0;
+}
+.container_imagens_nossaHistoria {
+    align-items: center;
+    padding-left: 50px;
+}
+.imagem-igual {
+    padding-right: 50px;
+    width: 350px;
+    height: 350px;
+}
+.imagem2 {
+    padding-right: 50px;
+    width: 500px;
+    height: 400px;
+}

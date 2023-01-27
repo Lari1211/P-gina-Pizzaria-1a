@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.titulo_maisPedidas {
+    border-bottom: 3px solid #D9D9D9;
+    width: 50%;
+    margin: 45px auto 0;
+}
+.conteudo_maisPedidas {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.titulo_sabor {
+    margin: 10px;
+    border-bottom: 2px solid red;
+    width: 75%;
+    text-align: center;
+}
+.container_informacoes-mais-pedidas .imagem_mais-pedidas {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1px;
+}
+.imagem_mais-pedidas {
+    border-radius: 100%;
+    width: 100px;
+}
+.container_mais-pedidas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 98%;
+    margin: 0 auto;
+    gap: 40px;
+    padding: 50px 0;
+    padding-left: 39px;
+   
+}
+.container_informacoes-mais-pedidas {
+    background-color: rgba(225, 255, 40, 0.33);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 80%;
+    box-shadow: 1px 1px 5px 5px rgba(128, 128, 128, 0.301);
+}
+.container_informacoes-mais-pedidas h3 {
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+}
+p {
+    padding: 9px;
+    text-align: center;
+    font-size: 16px;
+}
+.lista_sobre-pizza {
+    display: flex;
+    text-align: center;
+    padding: 9px;
+}
+.lista_tamanho {
+    margin: 0 10px 0 10px;
+    font-size: 17px;
+}
+.lista_valor {
+    margin: 0 10px 0 10px;
+    background-color: #CCCCCC;
+    border-radius: 5px;
+    font-size: 14px;    
+}
+.lista_centimetro {
+    margin: 0 10px 0 10px;
+    font-size: 16px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+/* Outro style */
+
+/* body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container_informacoes-mais-pedidas .imagem_mais-pedidas {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1px;
+}
+.imagem_mais-pedidas {
+    border-radius: 100%;
+    width: 100px;
+}
+.container_mais-pedidas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    padding-left: 37px;
+}
+.container_informacoes-mais-pedidas {
+    background-color: rgba(225, 255, 40, 0.33);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 72%;
+    box-shadow: 1px 1px 5px 5px rgba(128, 128, 128, 0.301);
+}
+.container_informacoes-mais-pedidas h3 {
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+}
+p {
+    text-align: center;
+    font-size: 16px;
+    padding: 9px;
+}
+.lista_sobre-pizza {
+    display: flex;
+    text-align: center;
+    padding: 9px;
+}
+.lista_tamanho {
+    margin: 0 10px 0 10px;
+    font-size: 17px;
+}
+.lista_valor {
+    margin: 0 10px 0 10px;
+    background-color: #CCCCCC;
+    border-radius: 5px;
+    font-size: 14px;    
+}
+.lista_centimetro {
+    margin: 0 10px 0 10px;
+    font-size: 16px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+.titulo_sabor {
+    margin: 10px;
+    border-bottom: 2px solid red;
+    width: 75%;
+    text-align: center;
+} */

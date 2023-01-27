@@ -1,0 +1,22 @@
+.container_historia-pizzaria{
+    border-radius: 5px;
+    height: auto;
+    margin: 65px auto;
+    width: 90%;
+    top: 200px;
+
+}
+
+.titulo_historia-pizzaria{
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.texto_historia-pizzaria{
+    font-size: 20px;
+    line-height: 30px;
+    margin: auto;
+    padding: 10px;
+    text-align: left;
+
+}
