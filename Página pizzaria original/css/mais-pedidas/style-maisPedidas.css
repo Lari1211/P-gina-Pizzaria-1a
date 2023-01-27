@@ -71,7 +71,8 @@ p {
     margin: 0 10px 0 10px;
     background-color: #CCCCCC;
     border-radius: 3px;
-    font-size: 14px;    
+    font-size: 13px;
+    padding: 5px;    
 }
 .lista_centimetro {
     margin: 0 10px 0 10px;
