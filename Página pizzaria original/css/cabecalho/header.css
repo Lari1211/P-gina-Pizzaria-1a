@@ -11,8 +11,7 @@ body {
     padding: 2px;
 }
 .logo-pizzaria {
-    padding-left: 20px;
-    width: 50px;
+    width: 100px;
 }
 .nav-header {
     align-items: center;
@@ -33,7 +32,7 @@ body {
 .nav-a:hover {
     font-weight: bold;
     border-radius: 10px;
-    background: #F63D3D;
+    background: rgba(143, 54, 54, 1);
     transition: 0.5s;
     padding: 6px;
 }
