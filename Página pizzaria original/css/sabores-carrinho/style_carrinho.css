@@ -37,6 +37,11 @@ header {
     align-items: center;
 }
 
+#fin-ped{
+    color: #000000;
+    text-decoration: none;
+}
+
 .menu-openner {
     margin-right: 15px;
     font-size: 26px;
