@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Reserva</title>
+    <link rel="stylesheet" href="./css/reserva/style_reserva.css">
+</head>
+<body>
+    <!-- Início Reserva -->
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend class="titulo_formulario">Reserva</legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome Completo</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="telefone" class="labelInput">Contato</label>
+                </div>
+                <br><br>
+                    <label for="dia_reserva" class="data_reserva">Data da Reserva:</label>
+                    <input type="date" name="dia_reserva" id="dia_reserva" required>
+                    <br><br>
+                    <label for="horario_reserva" class="horario_reserva">Horário da Reserva:</label>
+                    <input type="time" name="horario_reserva" id="horario_reserva" required>
+                    <br>
+                    <p>Acompanhantes:</p>
+                    <input type="radio" id="nao" name="acompanhantes" value="Nao" required> 
+                    <label for="nao">Não</label>
+                    <br>
+                    <input type="radio" id="pessoas1" name="acompanhantes" value="pessoas1" required> 
+                    <label for="pessoas1">1 pessoa</label>
+                    <br>
+                    <input type="radio" id="pessoas_mais" name="acompanhantes" value="pessoas_mais" required> 
+                    <label for="pessoas_mais">2 pessoas ou +</label>
+                <br><br>
+                <input type="submit" name="submit" id="submit" value="Reservar">
+            </fieldset>
+        </form>
+    </div>
+    <!-- Fim Reserva -->
+</body>
+</html>
