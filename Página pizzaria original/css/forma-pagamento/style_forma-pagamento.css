@@ -1,0 +1,49 @@
+*{
+    background: #F5F5F5;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container_fomas-pagamento{
+    margin: 100px auto 0;
+}
+
+
+.titulo_formas-pagamento{
+    margin: 0 0 25px 0;
+
+}
+.titulo_formas-pagamento, .opcao_formas-pagamento{
+    text-align: center;
+}
+
+.container_opcoes-pagamento{
+    margin: auto;
+    width: 30%;
+}
+
+.opcao_formas-pagamento{
+    border: 1px solid #581616;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.24);
+    border-radius: 5px;
+    background: #FFF;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 0 25px;
+    padding: 15px; 
+    transition: all;
+}
+
+.opcao_formas-pagamento:hover{
+    background: #703543;
+    border-radius: 10px;
+    color: #FFF;
+    transition: 0.3S;
+}
+
+.opcao_formas-pagamento:active{
+    background: #581616;
+    border-radius: 15px;
+
+}
