@@ -1,0 +1,11 @@
+.container_borda{
+    width: 95%;
+}
+.opcao_borda{
+    display: flex;
+    width: auto;
+}
+
+.preco_tipo-borda{
+    margin-left: auto;
+}
