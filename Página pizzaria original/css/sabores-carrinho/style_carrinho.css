@@ -21,6 +21,14 @@ body {
     min-height:100vh;
 }
 
+.models-item--tipo{
+    border-radius: 5px;
+    border: solid 2px #8F3636;
+    margin: auto;
+    padding: 6px;
+    width: 50%;
+}
+
 .models {
     display:none;
 }
