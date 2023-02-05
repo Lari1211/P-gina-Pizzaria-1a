@@ -46,7 +46,7 @@ header {
 }
 
 #fin-ped{
-    color: #000000;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -403,17 +403,16 @@ h1 {
 .cart--finalizar {
     padding:20px 30px;
     border-radius:20px;
-    background-color:#48d05f;
+    background-color:#8F3636;
     color:#FFF;
     cursor:pointer;
     text-align:center;
     margin-top:20px;
-    border:2px solid #63f77c;
     transition: all ease .2s;
 }
 
 .cart--finalizar:hover {
-    background-color:#35af4a;
+    background-color:#7a0b0b;
 }
 
 @media (max-width:1000px) {
