@@ -34,6 +34,7 @@ body{
     align-items: center;
     display: flex;
     flex-direction: column;
+    width: 25%;
 
 }
 
@@ -44,6 +45,7 @@ body{
     box-shadow: -3px 3px 8px -1px grey;
     display: flex;
     flex-direction: column;
+    height: 320px;
     padding: 10px;
     width: 72%;
 
