@@ -1,0 +1,65 @@
+.legenda_cadastro {
+    font-weight: bold;
+    border: none;
+   
+}
+p {
+    text-align: center;
+    padding-bottom: 18px;
+}
+.cadastro {
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    padding: 15px;
+    border-radius: 10px;
+    width: 20%;
+}
+fieldset {
+    border: none;
+}
+legend {
+    
+    padding: 10px;
+    text-align: center;
+    
+    border-radius: 5px;
+}
+.inputCadastro {
+    border-radius: 8px;
+    outline: none;
+    color: black;
+    font-size: 15px;
+    padding: 5px;
+}
+.legenda_face {
+    background: #6081C7;
+}
+.legenda_face:hover {
+    background: blue;
+    transition: .5s;
+}
+.legenda_google {
+    background: #F5F5F5;
+}
+.legenda_google:hover {
+    background: #CCCCCC;
+    transition: .5s;
+}
+
+#submit {
+    background: white;
+    width: 40%;
+    height: 50%;
+    padding: 10px;
+    margin: 0px 10px 0px 10px;
+    font-size: 13px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#submit:hover {
+    background-color: #CCCCCC;}
