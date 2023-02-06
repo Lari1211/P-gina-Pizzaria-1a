@@ -9,7 +9,12 @@
 
 .titulo_historia-pizzaria{
     font-size: 2.2rem;
+    font-family: verdana;
     text-align: center;
+    color: rgba(143, 54, 54, 1);
+    margin: 10px;
+    border-bottom: 3px solid rgba(241, 196, 0, 1);
+    width: 50%;
 }
 
 .texto_historia-pizzaria{
