@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/diferenciais/style-diferenciais.css">
     <link rel="stylesheet" href="./css/mais-pedidas/style-maisPedidas.css">
     <link rel="stylesheet" href="css/rodape/rodape-style.css">
+    <link rel="stylesheet" href="css/cadastro/style_cadastro.css">
    
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
@@ -47,8 +48,8 @@
                         </section>
         <script src="./JavaScript/cabecalho.js"></script>
             <section class="cabecalho-esquerda">
-                <a href="./login.html" class="nav-a" id="nav-a-entrar">Entrar</a>
-                <a href="./login.html" class="nav-a">Criar Conta</a>
+                <a href="./cadastro.html" class="nav-a" id="nav-a-entrar">Entrar</a>
+                <a href="./cadastro.html" class="nav-a">Criar Conta</a>
             </section>
                 </nav>
         </div>
@@ -137,243 +138,136 @@
 <!-- Fim - tipos de pizza -->
 
 <!-- Inicio pizzas mais pedidas -->
-<div class="titulo_maisPedidas">
-    <p class="conteudo_maisPedidas">Mais pedidas</p>
+ <!-- Modelos para clonagem e inclusão na área de exibição -->
+ <div class="models">
+    <div class="models-item">
+        <a href="">
+            <div class="models-item--img"><img src="" /></div>
+            <div class="models-item--add">+</div>
+        </a>
+
+        <div class="models-item--tipo"></div>
+        <div class="models-item--price">R$ --</div>
+        <div class="models-item--name">--</div>
+        <div class="models-item--desc">--</div>
+    </div>
+    <div class="cart--item">
+        <img src="" />
+        <div class="cart--item-nome">--</div>
+        <div class="cart--item--qtarea">
+            <button class="cart--item-qtmenos">-</button>
+            <div class="cart--item--qt">1</div>
+            <button class="cart--item-qtmais">+</button>
+        </div>
+    </div>
 </div>
-<section class="container_mais-pedidas">
-    <div class="container_informacoes-mais-pedidas">
-        <img src="./imagens/mais-pedidas/calabresa.png" alt="" class="imagem_mais-pedidas">
-        <div class="titulo_sabor">
-            <h3>Calabresa</h3>
+<main>
+    <h1>Nossos sabores</h1>
+    <div class="models-area"></div>
+</main>
+<aside>
+    <div class="cart--area">
+        <div class="menu-closer">
+            <span class="material-icons">close</span>
         </div>
-                <p>Massa caseira, molhos de tomates orgânicos, calabresa defumada e queijo mussarela</p>
-                    <div> 
-                        <ol class="lista_sobre-pizza"> 
-                            <li class="lista_tamanho">Broto</li>
-                            <li class="lista_tamanho">Média</li>
-                            <li class="lista_tamanho">Grande</li>
-                        </ol> 
-                    </div>
-                    <div>
-                        <ol class="lista_sobre-pizza">
-                            <li class="lista_centimetro">25cm</li>
-                            <li class="lista_centimetro">35cm</li>
-                            <li class="lista_centimetro">50cm</li>
-                        </ol>
-                    </div>
-                    <div>
-                        <ol class="lista_sobre-pizza">
-                            <li  class="lista_valor">R$31,90</li>
-                            <li  class="lista_valor">R$56,60</li>
-                            <li  class="lista_valor">R$70,00</li>
-                        </ol>
-                    </div>
-    </div>
-    
-    <div class="container_informacoes-mais-pedidas">
-        <img src="./imagens/mais-pedidas/passatempo.png" alt="" class="imagem_mais-pedidas">
-        <div class="titulo_sabor">
-            <h3>Passatempo</h3>
-        </div>
-                <p>Massa caseira, chocolate ao leite e cobertura de chocolate meio amarga</p>
-                    <div>
-                        <ol class="lista_sobre-pizza">   
-                            <li class="lista_tamanho">Broto</li>
-                            <li class="lista_tamanho">Média</li>
-                            <li class="lista_tamanho">Grande</li>
-                        </ol> 
-                    </div>
-                    <div>
-                        <ol class="lista_sobre-pizza">
-                            <li class="lista_centimetro">25cm</li>
-                            <li class="lista_centimetro">35cm</li>
-                            <li class="lista_centimetro">50cm</li>
-                        </ol>
-                    </div>
-                    <div>
-                        <ol class="lista_sobre-pizza">
-                            <li class="lista_valor">R$31,90</li>
-                            <li class="lista_valor">R$56,60</li>
-                            <li class="lista_valor">R$70,00</li>
-                        </ol>
-                    </div>
-    </div>
+        <h1>Seu pedido</h1>
+        <div class="cart"></div>
+        <div class="cart--details">
+            <div class="cart--totalitem subtotal">
+                <span>Subtotal</span>
+                <span>R$ --</span>
+            </div>
+            <div class="cart--totalitem desconto">
+                <span>Desconto (-10%)</span>
+                <span>R$ --</span>
+            </div>
 
-    <div class="container_informacoes-mais-pedidas">
-        <img src="./imagens/mais-pedidas/strogonoff.png" alt="" class="imagem_mais-pedidas">
-        <div class="titulo_sabor">
-            <h3>Strogonoff</h3>
-        </div>
-                <p>Massa caseira, strogonoff de carne, batata palha e champingnon</p>
-                    <div>
-                        <ol class="lista_sobre-pizza">   
-                            <li class="lista_tamanho">Broto</li>
-                            <li class="lista_tamanho">Média</li>
-                            <li class="lista_tamanho">Grande</li>
-                        </ol> 
-                    </div>
-                    <div>
-                        <ol class="lista_sobre-pizza">
-                            <li class="lista_centimetro">25cm</li>
-                            <li class="lista_centimetro">35cm</li>
-                            <li class="lista_centimetro">50cm</li>
-                        </ol>
-                    </div>
-                    <div>
-                        <ol class="lista_sobre-pizza">
-                            <li  class="lista_valor">R$31,90</li>
-                            <li  class="lista_valor">R$56,60</li>
-                            <li  class="lista_valor">R$70,00</li>
-                        </ol>
-                    </div>
-    </div>
+            <textarea name="Observações" id="ob" cols="30" rows="10" placeholder="Ex: tirar cebola, maionese à parte etc."></textarea>
 
-    <div class="container_informacoes-mais-pedidas">
-        <img src="./imagens/mais-pedidas/portuguesa.png" alt="" class="imagem_mais-pedidas">
-        <div class="titulo_sabor">
-            <h3>Portuguesa</h3>
+            <div class="cart--totalitem total big">
+                <span>Total</span>
+                <span>R$ --</span>
+            </div>
+            <div class="cart--finalizar"><a id="fin-ped" href="forma-pagamento.html">Finalizar pedido</a></div>
         </div>
-                <p>Massa caseira, cebola roxa, ovo, tomate cereja, azeitona e pimentão</p>
-                    <div>
-                        <ol class="lista_sobre-pizza">    
-                            <li class="lista_tamanho">Broto</li>
-                            <li class="lista_tamanho">Média</li>
-                            <li class="lista_tamanho">Grande</li>
-                        </ol> 
-                    </div>
-                    <div>
-                        <ol class="lista_sobre-pizza">
-                            <li class="lista_centimetro">25cm</li>
-                            <li class="lista_centimetro">35cm</li>
-                            <li class="lista_centimetro">50cm</li>
-                        </ol>
-                    </div>
-                    <div>
-                        <ol class="lista_sobre-pizza">
-                            <li  class="lista_valor">R$31,90</li>
-                            <li  class="lista_valor">R$56,60</li>
-                            <li  class="lista_valor">R$70,00</li>
-                        </ol>
-                    </div>
     </div>
+</aside>
+<div class="modelsWindowArea">
+    <div class="modelsWindowBody">
+        <!-- 
+            Este botão é o cancelar do mobile (mostrar com F12) a ação do cancelar
+            da janela modal vai ser igual, logo vamos fazer uma função
+        -->
+        <div class="modelsInfo--cancelMobileButton">Voltar</div>
+        <div class="modelsBig">
+            <img src="" />
+        </div>
+        <div class="modelsInfo">
+            <h1>--</h1>
+            <div class="modelsInfo--desc">--</div>
+            <div class="modelsInfo--sizearea">
+                <div class="modelsInfo--sector">Tamanhos</div>
+                <div class="modelsInfo--sizes">
+                    <div data-key="0" class="modelsInfo--size">Pequena <span>--</span></div>
+                    <div data-key="1" class="modelsInfo--size">Média <span>--</span></div>
+                    <div data-key="2" class="modelsInfo--size selected">Grande <span>--</span></div>
+                </div>
+            </div>
 
-    <div class="container_informacoes-mais-pedidas">
-        <img src="./imagens/mais-pedidas/rucula.png" alt="" class="imagem_mais-pedidas">
-        <div class="titulo_sabor">
-            <h3>Rúcula com queijo</h3>
-        </div>
-                <p>Massa caseira, carne seca, tomate e mozarella</p>
-                    <div>
-                        <ol class="lista_sobre-pizza">    
-                            <li class="lista_tamanho">Broto</li>
-                            <li class="lista_tamanho">Média</li>
-                            <li class="lista_tamanho">Grande</li>
-                        </ol> 
-                    </div>
-                    <div>
-                        <ol class="lista_sobre-pizza">
-                            <li class="lista_centimetro">25cm</li>
-                            <li class="lista_centimetro">35cm</li>
-                            <li class="lista_centimetro">50cm</li>
-                        </ol>
-                    </div>
-                    <div>
-                        <ol class="lista_sobre-pizza">
-                            <li  class="lista_valor">R$31,90</li>
-                            <li  class="lista_valor">R$56,60</li>
-                            <li  class="lista_valor">R$70,00</li>
-                        </ol>
-                    </div>
-    </div>
+            <div class="modelsInfo--bordas">
+                <section class="container_borda">
 
-    <div class="container_informacoes-mais-pedidas">
-        <img src="./imagens/mais-pedidas/listradinha.png" alt="" class="imagem_mais-pedidas">
-        <div class="titulo_sabor">
-            <h3>Listradinha</h3>
-        </div>
-                <p>Massa caseira, chocolate ao leite, chocolate meio amargo e chocolate branco suiço</p>
-                    <div>
-                        <ol class="lista_sobre-pizza">    
-                            <li class="lista_tamanho">Broto</li>
-                            <li class="lista_tamanho">Média</li>
-                            <li class="lista_tamanho">Grande</li>
-                        </ol> 
-                    </div>
-                    <div>
-                        <ol class="lista_sobre-pizza">
-                            <li class="lista_centimetro">25cm</li>
-                            <li class="lista_centimetro">35cm</li>
-                            <li class="lista_centimetro">50cm</li>
-                        </ol>
-                    </div>
-                    <div>
-                        <ol class="lista_sobre-pizza">
-                            <li  class="lista_valor">R$31,90</li>
-                            <li  class="lista_valor">R$56,60</li>
-                            <li  class="lista_valor">R$70,00</li>
-                        </ol>
-                    </div>
-    </div>
+                    <h2 class="titulo_borda">Borda</h2>
+                    <p class="texto_borda">Adicione a borda de sua preferência:</p>
 
-    <div class="container_informacoes-mais-pedidas">
-        <img src="./imagens/mais-pedidas/havaiana.png" alt="" class="imagem_mais-pedidas">
-        <div class="titulo_sabor">
-            <h3>Havaiana</h3>
-        </div>
-                <p>Massa caseira, molhos de tomates orgânicos, abacaxi em cubos e queijo parmesão</p>
-                    <div>
-                        <ol class="lista_sobre-pizza">    
-                            <li class="lista_tamanho">Broto</li>
-                            <li class="lista_tamanho">Média</li>
-                            <li class="lista_tamanho">Grande</li>
-                        </ol> 
-                    </div>
-                    <div>
-                        <ol class="lista_sobre-pizza">
-                            <li class="lista_centimetro">25cm</li>
-                            <li class="lista_centimetro">35cm</li>
-                            <li class="lista_centimetro">50cm</li>
-                        </ol>
-                    </div>
-                    <div>
-                        <ol class="lista_sobre-pizza">
-                            <li  class="lista_valor">R$31,90</li>
-                            <li  class="lista_valor">R$56,60</li>
-                            <li  class="lista_valor">R$70,00</li>
-                        </ol>
-                    </div>
-    </div>
+                    <section class="opcao_borda">
+                        <input class="input_tipo_borda" type="radio" name="borda" value="b01">
+                        <P class="tipo_borda">Borda simples</P>
+                        <p class="preco_tipo-borda">R$00,00</p>
+                    </section>
+                    <section class="opcao_borda">
+                        <input class="input_tipo_borda" type="radio" name="borda" value="b01">
+                        <P class="tipo_borda">Chocolate ao leite </P>
+                        <p class="preco_tipo-borda">R$12,00</p>
+                    </section>
+                    <section class="opcao_borda">
+                        <input class="input_tipo_borda" type="radio" name="borda" value="b02">
+                        <P class="tipo_borda">Chocolate meio amargo</P>
+                        <p class="preco_tipo-borda">R$7,80</p>
+                    </section>
+                    <section class="opcao_borda">
+                        <input class="input_tipo_borda" type="radio" name="borda" value="b04">
+                        <P class="tipo_borda">Requeijão</P>
+                        <p class="preco_tipo-borda">R$10,70</p>
+                    </section>
+                    <section class="opcao_borda">
+                        <input class="input_tipo_borda" type="radio" name="borda" value="b05">
+                        <P class="tipo_borda">Quatro queijos</P>
+                        <p class="preco_tipo-borda">R$15,90</p>
+                    </section>
 
-    <div class="container_informacoes-mais-pedidas">
-        <img src="./imagens/mais-pedidas/romeu.png" alt="" class="imagem_mais-pedidas">
-        <div class="titulo_sabor">
-            <h3>Romeu e Julieta</h3>
+                </section>
+
+            </div>
+            <div class="modelsInfo--pricearea">
+                <div class="modelsInfo--sector">Preço</div>
+                <div class="modelsInfo--price">
+                    <div class="modelsInfo--actualPrice">R$ --</div>
+                    <div class="modelsInfo--qtarea">
+                        <button class="modelsInfo--qtmenos">-</button>
+                        <div class="modelsInfo--qt">1</div>
+                        <button class="modelsInfo--qtmais">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modelsInfo--addButton">Adicionar ao carrinho</div>
+            <div class="modelsInfo--cancelButton">Cancelar</div>
         </div>
-                <p>Massa caseira, goiabada em pedaços, canela em pó e queijo</p>
-                    <div>
-                        <ol class="lista_sobre-pizza">    
-                            <li class="lista_tamanho">Broto</li>
-                            <li class="lista_tamanho">Média</li>
-                            <li class="lista_tamanho">Grande</li>
-                        </ol> 
-                    </div>
-                    <div>
-                        <ol class="lista_sobre-pizza">
-                            <li class="lista_centimetro">25cm</li>
-                            <li class="lista_centimetro">35cm</li>
-                            <li class="lista_centimetro">50cm</li>
-                        </ol>
-                    </div>
-                    <div>
-                        <ol class="lista_sobre-pizza">
-                            <li  class="lista_valor">R$31,90</li>
-                            <li  class="lista_valor">R$56,60</li>
-                            <li  class="lista_valor">R$70,00</li>
-                        </ol>
-                    </div>
     </div>
-    
-</section>
+</div>
+
+<script type="text/javascript" src="./JavaScript/sabores-maisPedidas/model.js"></script>
+<script type="text/javascript" src="./JavaScript/sabores-maisPedidas/script_maisPedidas.js"></script>
 <!-- Fim pizzas mais pedidas -->
 
 <!-- Início Comentários -->
