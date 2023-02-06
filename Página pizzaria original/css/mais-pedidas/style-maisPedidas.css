@@ -40,7 +40,7 @@ body{
    
 }
 .container_informacoes-mais-pedidas {
-    background-color: rgba(225, 255, 40, 0.33);
+    background-color:#703543;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
