@@ -15,12 +15,13 @@ body {
     top: 1rem;
     width: 10%;
     height: 80px;
+    padding-left: 10px;
 }
 .nav-header {
     align-items: center;
     display: flex;
     font-size: 20px;
-    padding-left: 60px;
+    padding-left:10px;
 }
 
 .nav-a {
