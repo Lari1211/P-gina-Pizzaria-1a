@@ -94,6 +94,7 @@ main {
 h1 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: underline #F1C400;
 }
 
 .models-area {
