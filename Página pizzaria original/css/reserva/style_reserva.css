@@ -1,3 +1,6 @@
+body {
+    background-color: #EEE;
+}
 .titulo_formulario {
     font-weight: bold;
 }
@@ -10,19 +13,19 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #703543;
     padding: 15px;
     border-radius: 15px;
     width: 25%;
 }
 fieldset {
-    border: 3px solid orange;
+    border: 3px solid white;
 }
 legend {
-    border: 1px solid orange;
+    border: 1px solid #581616;
     padding: 10px;
     text-align: center;
-    background-color: orange;
+    background-color: #581616;
     border-radius: 8px;
 }
 .inputBox {
