@@ -34,7 +34,9 @@
 .titulo_contato_rodape {
     font-weight: bold;
     font-size: 16px;
+    margin: 25px 0 0 0;
     padding: 20px;
+    text-align: center;
 }
 .informacao_container02_rodape {
     display: flex;
@@ -70,6 +72,7 @@
     
 }
 hr {
-    width: 80%;
+    margin: 0 auto;
+    width: 75%;
 }
 

@@ -45,7 +45,7 @@ body{
     box-shadow: -3px 3px 8px -1px grey;
     display: flex;
     flex-direction: column;
-    height: 320px;
+    height: 300px;
     padding: 10px;
     width: 72%;
 
@@ -66,6 +66,7 @@ body{
 .texto_sessao-comentarios{
     font-size: 16px;
     font-weight: 400;
+    margin: 30px 0 0;
     text-align: left;
     width: 75%;
 
