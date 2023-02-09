@@ -32,7 +32,9 @@ body{
     cursor:pointer;
     margin-top:-25px;
     transition:all ease .2s;
-    
+}
+.botao-a {
+    text-decoration: none;
 }
 .titulo_sabor {
     background:#FFFFFF;
