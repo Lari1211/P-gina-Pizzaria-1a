@@ -78,13 +78,17 @@ header {
     display:none;
     font-size: 30px;
 }
-
+.container-aside{
+    background: #9ccbe6;
+}
 aside {
     background-color:#9ccbe6;
     width:0vw;
     font-family: 'Montserrat', sans-serif;
     transition:all ease .2s;
     overflow-x:hidden;
+    position: sticky;
+    top: 0;
 }
 
 aside.show {
