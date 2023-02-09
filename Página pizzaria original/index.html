@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="./css/mais-pedidas/style-maisPedidas.css">
     <link rel="stylesheet" href="css/rodape/rodape-style.css">
     <link rel="stylesheet" href="css/cadastro/style_cadastro.css">
-    <link rel="stylesheet" href="./css/mais-pedidas/borda.css">
     <link rel="stylesheet" href="css/botão-topo/style_link-topo.css">
    
    
@@ -148,110 +147,115 @@
 <!-- Fim - tipos de pizza -->
 
 <!-- Inicio pizzas mais pedidas -->
- <!-- Modelos para clonagem e inclusão na área de exibição -->
- <div class="models">
-    <div class="models-item">
-        <a href="">
-            <div class="models-item--img"><img src="" /></div>
-            <div class="models-item--add">+</div>
-        </a>
-
-        <div class="models-item--tipo"></div>
-        <div class="models-item--price">R$ --</div>
-        <div class="models-item--name">--</div>
-        <div class="models-item--desc">--</div>
-    </div>
-    <div class="cart--item">
-        <img src="" />
-        <div class="cart--item-nome">--</div>
-        <div class="cart--item--qtarea">
-            <button class="cart--item-qtmenos">-</button>
-            <div class="cart--item--qt">1</div>
-            <button class="cart--item-qtmais">+</button>
-        </div>
-    </div>
+<div class="titulo_maisPedidas">
+    <p class="conteudo_maisPedidas">Mais pedidas</p>
 </div>
-<main>
-    <h1 class="titulo_maisPedidas">Mais Pedidas</h1>
-    <div class="models-area"></div>
-</main>
-
-<div class="modelsWindowArea">
-    <div class="modelsWindowBody">
-        <!-- 
-            Este botão é o cancelar do mobile (mostrar com F12) a ação do cancelar
-            da janela modal vai ser igual, logo vamos fazer uma função
-        -->
-        <div class="modelsInfo--cancelMobileButton">Voltar</div>
-        <div class="modelsBig">
-            <img src="" />
-        </div>
-        <div class="modelsInfo">
-            <h1>--</h1>
-            <div class="modelsInfo--desc">--</div>
-            <div class="modelsInfo--sizearea">
-                <div class="modelsInfo--sector">Tamanhos</div>
-                <div class="modelsInfo--sizes">
-                    <div data-key="0" class="modelsInfo--size">Pequena <span>--</span></div>
-                    <div data-key="1" class="modelsInfo--size">Média <span>--</span></div>
-                    <div data-key="2" class="modelsInfo--size selected">Grande <span>--</span></div>
+<section class="container_mais-pedidas">
+    <div class="container_informacoes-mais-pedidas">
+        <img src="./imagens/mais-pedidas/calabresa.png" alt="" class="imagem_mais-pedidas">
+            <a href="./carrinho.html">
+                <div class="botao_maisPedidas">+</div>
+            </a>
+                <div class="titulo_sabor">
+                    <h3>Salgada</h3>
                 </div>
-            </div>
-
-            <div class="modelsInfo--bordas">
-                <section class="container_borda">
-
-                    <h2 class="titulo_borda">Borda</h2>
-                    <p class="texto_borda">Adicione a borda de sua preferência:</p>
-
-                    <section class="opcao_borda">
-                        <input class="input_tipo_borda" type="radio" name="borda" value="b01">
-                        <P class="tipo_borda">Borda simples</P>
-                        <p class="preco_tipo-borda">R$00,00</p>
-                    </section>
-                    <section class="opcao_borda">
-                        <input class="input_tipo_borda" type="radio" name="borda" value="b01">
-                        <P class="tipo_borda">Chocolate ao leite </P>
-                        <p class="preco_tipo-borda">R$12,00</p>
-                    </section>
-                    <section class="opcao_borda">
-                        <input class="input_tipo_borda" type="radio" name="borda" value="b02">
-                        <P class="tipo_borda">Chocolate meio amargo</P>
-                        <p class="preco_tipo-borda">R$7,80</p>
-                    </section>
-                    <section class="opcao_borda">
-                        <input class="input_tipo_borda" type="radio" name="borda" value="b04">
-                        <P class="tipo_borda">Requeijão</P>
-                        <p class="preco_tipo-borda">R$10,70</p>
-                    </section>
-                    <section class="opcao_borda">
-                        <input class="input_tipo_borda" type="radio" name="borda" value="b05">
-                        <P class="tipo_borda">Quatro queijos</P>
-                        <p class="preco_tipo-borda">R$15,90</p>
-                    </section>
-
-                </section>
-
-            </div>
-            <div class="modelsInfo--pricearea">
-                <div class="modelsInfo--sector">Preço</div>
-                <div class="modelsInfo--price">
-                    <div class="modelsInfo--actualPrice">R$ --</div>
-                    <div class="modelsInfo--qtarea">
-                        <button class="modelsInfo--qtmenos">-</button>
-                        <div class="modelsInfo--qt">1</div>
-                        <button class="modelsInfo--qtmais">+</button>
-                    </div>
-                </div>
-            </div>
-            <div class="modelsInfo--addButton">Adicionar ao carrinho</div>
-            <div class="modelsInfo--cancelButton">Cancelar</div>
-        </div>
+                    <h4>R$ 25,90</h4>
+                        <h2>Calabresa</h2>
+                            <p>Massa caseira, molho de tomate orgânico, calabresa defumada, cebola e queijo muçarela.</p>
     </div>
-</div>
+    
+    <div class="container_informacoes-mais-pedidas">
+        <img src="./imagens/mais-pedidas/francesa.png" alt="" class="imagem_mais-pedidas">
+            <a href="./carrinho.html">
+                <div class="botao_maisPedidas">+</div>
+            </a>
+                <div class="titulo_sabor">
+                    <h3>Vegetariana</h3>
+                </div>
+                    <h4>R$ 30,00</h4>
+                        <h2>Francesa</h2>
+                            <p>Massa caseira, mix de shitake, shimeji, champignon, requeijão e tomate cereja.</p>
+    </div>
 
-<script type="text/javascript" src="./JavaScript/sabores-maisPedidas/model.js"></script>
-<script type="text/javascript" src="./JavaScript/sabores-maisPedidas/script_maisPedidas.js"></script>
+    <div class="container_informacoes-mais-pedidas">
+        <img src="./imagens/mais-pedidas/mineira.png" alt="" class="imagem_mais-pedidas">
+            <a href="./carrinho.html">
+                <div class="botao_maisPedidas">+</div>
+            </a>
+                <div class="titulo_sabor">
+                    <h3>Promoção</h3>
+                </div>
+                    <h4>R$ 20,00</h4>
+                        <h2>Mineira</h2>
+                            <p>Massa caseira, muçarela, catupiry e milho verde.</p>
+    </div>
+
+    <div class="container_informacoes-mais-pedidas">
+        <img src="./imagens/mais-pedidas/parma-com-rucula.png" alt="" class="imagem_mais-pedidas">
+            <a href="./carrinho.html">
+                <div class="botao_maisPedidas">+</div>
+            </a>
+                <div class="titulo_sabor">
+                    <h3>Zero lactose</h3>
+                </div>
+                    <h4>R$ 25,00</h4>
+                        <h2>Parma com rúcula</h2>
+                            <p>Massa caseira, presunto Parma, folhas de rúcula, muçarela, orégano e tomates frescos.</p>
+    </div>
+
+    <div class="container_informacoes-mais-pedidas">
+        <img src="./imagens/mais-pedidas/batata-doce.png" alt="" class="imagem_mais-pedidas">
+            <a href="./carrinho.html">
+                <div class="botao_maisPedidas">+</div>
+            </a>
+                <div class="titulo_sabor">
+                    <h3>Vegana</h3>
+                </div>
+                    <h4>R$ 30,00</h4>
+                        <h2>Batata-Doce</h2>
+                            <p>Massa caseira de batata-doce, quinoa, tomates em rodelas, folhas de manjericão e queijo vegano.</p>
+    </div>
+
+    <div class="container_informacoes-mais-pedidas">
+        <img src="./imagens/mais-pedidas/banoffe.png" alt="" class="imagem_mais-pedidas">
+            <a href="./carrinho.html">
+                <div class="botao_maisPedidas">+</div>
+            </a>
+                <div class="titulo_sabor">
+                    <h3>Doce</h3>
+                </div>
+                    <h4>R$ 35,00</h4>
+                        <h2>Banoffe</h2>
+                            <p>Massa caseira, doce de leite caseiro, banana, chantily fresco e canela indiana.</p>
+    </div>
+
+    <div class="container_informacoes-mais-pedidas">
+        <img src="./imagens/mais-pedidas/morango-com-chocolate.png" alt="" class="imagem_mais-pedidas">
+            <a href="./carrinho.html">
+                <div class="botao_maisPedidas">+</div>
+            </a>
+                <div class="titulo_sabor">
+                    <h3>Doce</h3>
+                </div>
+                    <h4>R$ 30,00</h4>
+                        <h2>Chocolate/morango</h2>
+                            <p>Massa caseira, creme de chocolate com avelã, pedaços de morango e chocolate branco.</p>
+    </div>
+
+    <div class="container_informacoes-mais-pedidas">
+        <img src="./imagens/mais-pedidas/italianissima.png" alt="" class="imagem_mais-pedidas">
+            <a href="./carrinho.html">
+                <div class="botao_maisPedidas">+</div>
+            </a>
+                <div class="titulo_sabor">
+                    <h3>Salgada</h3>
+                </div>
+                    <h4>R$ 25,00</h4>
+                        <h2>Italianissíma</h2>
+                            <p>Massa caseira, recheio de alcachofra, muçarela de búfala e presunto parma.</p>
+    </div>
+    
+</section>
 <!-- Fim pizzas mais pedidas -->
 
 <!-- Início Comentários -->
