@@ -33,6 +33,15 @@ body {
 .models {
     display:none;
 }
+#link_paginaInicial {
+    text-decoration: none;
+    color: white;
+    background: #581616;
+    padding: 15px;
+    position: fixed;
+    right: 10px;
+    box-shadow: 3px 3px 8px #333;
+}
 
 header {
     position: fixed;

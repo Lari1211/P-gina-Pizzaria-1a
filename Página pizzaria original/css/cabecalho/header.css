@@ -74,19 +74,22 @@ input[type=text] {
     width: 500px;
 }
 .pizzas {
-    color: black;
+    color: #996571;
     display: none;
-    text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
     padding-left: 8px;
+    padding: 5px;
     position: relative;
-    /* list-style: none;
-    width: 100%;
-    cursor: default; */
+    background: white;
+    text-decoration: none;
 }
-#lista_pesquisa {
+
+.pizzas:hover {
+    background: #CCCCCC;
+}
+.lista_pesquisa {
     font-size: 18px;
     margin-left: 10px;
-    text-decoration: none;
 }
 .barra-pesquisa {
 display: flex;
